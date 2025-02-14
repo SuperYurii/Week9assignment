@@ -9,6 +9,7 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/nextjs";
+import Header from "./components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +34,7 @@ export default function RootLayout({ children }) {
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <header>
+          {/* <header>
             <SignedOut>
               <SignInButton />
               <SignUpButton />
@@ -41,7 +42,8 @@ export default function RootLayout({ children }) {
             <SignedIn>
               <UserButton />
             </SignedIn>
-          </header>
+          </header> */}
+          <Header />
           {children}
         </body>
       </html>
