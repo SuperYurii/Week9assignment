@@ -3,6 +3,7 @@ import { createuser } from "@/app/utils/actions";
 
 const CreateProfile = async () => {
   const { userId } = await auth();
+  console.log({ userId });
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -15,7 +16,7 @@ const CreateProfile = async () => {
         </h2>
 
         {/* Clerk ID (Hidden Input) */}
-        <input type="hidden" name="clerk_id" value={userId ?? ""} />
+        <input type="hidden" name="clerk_id" value={userId} />
 
         {/* First Name */}
         <div className="mb-4">
