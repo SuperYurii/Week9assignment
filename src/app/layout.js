@@ -1,5 +1,6 @@
 //We need to provide our app with the clerk authentication services
 import { ClerkProvider } from "@clerk/nextjs";
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import {

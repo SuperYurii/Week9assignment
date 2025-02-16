@@ -6,7 +6,8 @@ export default function SignInPage() {
       {/* You can customise this page further */}
       <h1>Welcome to Miracle</h1>
       <h2>Sign in, please!</h2>
-      <SignIn />
+
+      <SignIn redirectUrl="/user-profile" />
     </>
   );
 }

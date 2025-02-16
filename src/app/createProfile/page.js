@@ -15,10 +15,9 @@ const CreateProfile = async () => {
           Create Your Profile
         </h2>
 
-        {/* Clerk ID (Hidden Input) */}
+        {/* clerk hidden input */}
         <input type="hidden" name="clerk_id" value={userId} />
 
-        {/* First Name */}
         <div className="mb-4">
           <label className="block text-sm font-semibold text-gray-700">
             First Name
@@ -32,7 +31,6 @@ const CreateProfile = async () => {
           />
         </div>
 
-        {/* Last Name */}
         <div className="mb-4">
           <label className="block text-sm font-semibold text-gray-700">
             Last Name
@@ -46,7 +44,6 @@ const CreateProfile = async () => {
           />
         </div>
 
-        {/* Username */}
         <div className="mb-4">
           <label className="block text-sm font-semibold text-gray-700">
             Username
@@ -60,7 +57,6 @@ const CreateProfile = async () => {
           />
         </div>
 
-        {/* Bio */}
         <div className="mb-4">
           <label className="block text-sm font-semibold text-gray-700">
             Bio
@@ -73,7 +69,6 @@ const CreateProfile = async () => {
           />
         </div>
 
-        {/* Submit Button */}
         <button
           type="submit"
           className="w-full bg-blue-600 text-white py-2 rounded-md font-semibold hover:bg-blue-700 transition"
